@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F0FF"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/left_arrow"
+            android:contentDescription="Back"
+            android:layout_gravity="start"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Registration"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please fill in your details"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="1dp"/>
+        <!-- Full Name -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Full Name"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/namebackground"
+            android:hint="Enter your full name"
+            android:padding="12dp" />
+        <!-- Email Address -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Email Address"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/namebackground"
+            android:hint="Enter your email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp" />
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Phone Number"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/namebackground"
+            android:hint="+1 (XXX) XXX-XXXX"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+        <!-- Registration Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Registration Number"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/namebackground"
+            android:hint="Enter registration number"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Select Course"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/namebackground"
+            android:hint="Select cource"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Course Code"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/namebackground"
+            android:hint="Select Course Code"
+            android:inputType="phone"
+            android:padding="12dp" />
+
+
+        <!-- Submit Button -->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#007BFF" />
+
+    </LinearLayout>
+</ScrollView>
+
+
+
+
