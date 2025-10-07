@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">educonnect</string>
+    <string name="student_login">Student Login</string>
+    <string name="please_login">Please login to continue</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forget_password">Forget password?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="back">Back</string>
+    <string name="login_icon">Login Icon</string>
+    <string name="back_button">Back</string>
+    <string name="notifications_list">Notifications list</string>
+
+
 </resources>

@@ -207,56 +207,58 @@
                     android:layout_marginTop="-30dp" />
             </LinearLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/Rectangle"
+            android:layout_height="146dp"
+            android:background="@drawable/rec"
+            android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="12dp"
-            android:gravity="center_vertical">
+            android:padding="12dp">
 
             <ImageView
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@drawable/imagestudent"
+                android:layout_marginEnd="12dp"
                 android:contentDescription="Performance Image"
-                android:layout_marginEnd="12dp" />
+                android:src="@drawable/imagestudent" />
+
             <LinearLayout
-                android:orientation="vertical"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Academic Performance"
+                    android:textColor="#000000"
                     android:textSize="16sp"
-                    android:textStyle="bold"
-                    android:textColor="#000000" />
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
                     android:text="CGPA: 8.9"
-                    android:textSize="14sp"
                     android:textColor="#333333"
-                    android:layout_marginTop="4dp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:text="Attendance: 95%"
-                    android:textSize="14sp"
                     android:textColor="#333333"
-                    android:layout_marginTop="2dp" />
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
                     android:text="Assignment Completed: 45/50"
-                    android:textSize="14sp"
                     android:textColor="#333333"
-                    android:layout_marginTop="2dp" />
+                    android:textSize="14sp" />
             </LinearLayout>
         </LinearLayout>
 

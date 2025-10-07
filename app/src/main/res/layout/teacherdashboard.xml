@@ -1,131 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:id="@+id/main"
     android:layout_height="match_parent"
-    android:background="#E6F0FF"
-    android:padding="16dp">
-<!--    <LinearLayout-->
-<!--        android:orientation="vertical"-->
-<!--        android:padding="16dp"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-<!--        <ImageView-->
-<!--            android:layout_width="24dp"-->
-<!--            android:layout_height="24dp"-->
-<!--            android:src="@drawable/left_arrow"-->
-<!--            android:contentDescription="Back" />-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Sarah Wilson"-->
-<!--            android:textSize="16sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:layout_marginTop="8dp"-->
-<!--            android:textColor="#000000" />-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="October 12, 2023"-->
-<!--            android:textSize="12sp"-->
-<!--            android:textColor="#555555" />-->
+    android:background="#E6F0FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/left_arrow"
+                android:contentDescription="Back"
+                android:layout_marginEnd="8dp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/teacherdashboardprofile"
+                android:layout_marginEnd="8dp"
+                android:contentDescription="Teacher Photo" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTeacherName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sarah Wilson"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="October 2, 2023"
+                    android:textColor="#555555"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
 
 
-<!--        <RelativeLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="60dp"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:background="@drawable/blank"-->
-<!--            android:padding="16dp">-->
-<!--            &lt;!&ndash; Your inner views go here &ndash;&gt;-->
-<!--            <TextView-->
-<!--                android:id="@+id/current_subject"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:text="Advanced Mathematics - Class XI-A"-->
-<!--                android:textColor="#000000"-->
-<!--                android:textSize="14sp"-->
-<!--                android:textStyle="bold" />-->
 
-<!--            <ImageView-->
-<!--                android:layout_width="20dp"-->
-<!--                android:layout_height="20dp"-->
-<!--                android:layout_alignParentEnd="true"-->
-<!--                android:layout_marginEnd="33dp"-->
-<!--                android:src="@drawable/frame" />-->
-<!--        </RelativeLayout>-->
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Attendance Overview"-->
-<!--            android:textSize="16sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:layout_marginTop="24dp"-->
-<!--            android:textColor="#000000" />-->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginBottom="16dp"-->
-<!--            android:weightSum="3">-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meeting Updates"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="#fff"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"/>
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_margin="4dp"-->
-<!--                android:background="@drawable/attendance"-->
-<!--                android:gravity="center" />-->
-<!--            &lt;!&ndash; Box 2 &ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_margin="4dp"-->
-<!--                android:background="@drawable/attendance"-->
-<!--                android:gravity="center" />-->
+    <!-- Recent Meeting Updates -->
+    <TextView
+        android:id="@+id/recentMeetingUpdatesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recent Meeting Updates"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
 
-<!--            &lt;!&ndash; Box 3 &ndash;&gt;-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="100dp"-->
-<!--                android:layout_weight="1"-->
-<!--                android:layout_margin="4dp"-->
-<!--                android:background="@drawable/attendance"-->
-<!--                android:gravity="center" />-->
+    <!-- Create Meeting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:elevation="2dp">
 
-<!--        </LinearLayout>-->
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:background="@drawable/attendance"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:gravity="center"-->
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:padding="16dp"-->
-<!--            android:weightSum="3">-->
-<!--            <LinearLayout-->
-<!--                android:layout_width="0dp"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_weight="1"-->
-<!--                android:orientation="vertical"-->
-<!--                android:gravity="center">-->
-<!--                <TextView-->
-<!--                    android:text="Last Class"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="14sp" />-->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_add"/>
+        <TextView
+            android:id="@+id/createmeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Create Meeting"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
 
-<!--                <TextView-->
-<!--                    android:text="40/45"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="14sp"-->
-<!--                    android:textStyle="bold" />-->
+    <!-- Reschedule Meeting -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:elevation="2dp">
 
-<!--                <TextView-->
-<!--                    android:text="89%"-->
-<!--                    android:textColor="#000000"-->
-<!--                    android:textSize="14sp" />-->
-<!--            </LinearLayout>-->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_edit"/>
+        <TextView
+            android:id="@+id/reschedulemeeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Reschedule Meeting"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
 
-</LinearLayout>
+    <!-- Meeting Page -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="8dp"
+        android:background="#fff"
+        android:elevation="2dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_agenda"/>
+        <TextView
+            android:id="@+id/meetingpage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  Meeting Page"
+            android:textSize="14sp"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+        <!-- Quick Actions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Actions"
+            android:textSize="16sp"
+            android:layout_marginEnd="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textColor="#000000" />
+
+        <!-- Actions Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <!-- Action 1 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:id="@+id/markattendance"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/atten"
+                    android:contentDescription="Mark Attendance" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="parent Attendance"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Action 2 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/coursereuqest"
+                    android:contentDescription="Course Request" />
+
+                <TextView
+                    android:id="@+id/menuBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="menu"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Action 3 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/share"
+                    android:contentDescription="Share Updates" />
+
+                <TextView
+                    android:id="@+id/sharedupdates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Share Updates"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+
+            <!-- Action 4 -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/logout"
+                    android:contentDescription="Student List" />
+
+                <TextView
+                    android:id="@+id/logoutBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="logout"
+                    android:textSize="12sp"
+                    android:textColor="#000000"
+                    android:layout_marginTop="4dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

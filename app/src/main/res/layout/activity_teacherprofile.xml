@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E6F0FF">
+
+    <!-- Top Title Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#004080"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teacher Profile"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Profile Details -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Profile Picture -->
+            <ImageView
+                android:id="@+id/profileImage"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profiles"
+                android:padding="10dp" />
+
+            <!-- Basic Info -->
+            <TextView
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/profileEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/profilePhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/profileGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/profileSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject ID: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/profileQualifications"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Qualifications: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <TextView
+                android:id="@+id/profileExperience"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience: Loading..."
+                android:textSize="18sp"
+                android:padding="10dp" />
+
+            <!-- Edit Profile Button -->
+            <Button
+                android:id="@+id/btnEditProfile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#004080"
+                android:textColor="#FFFFFF"
+                android:padding="12dp"
+                android:layout_marginBottom="40dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

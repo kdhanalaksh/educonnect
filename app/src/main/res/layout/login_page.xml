@@ -12,6 +12,7 @@
         android:padding="24dp"
         android:gravity="center_horizontal">
         <ImageView
+            android:id="@+id/loginbackbutton"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_gravity="start"
@@ -32,7 +33,7 @@
             android:src="@drawable/teacher_img"
             android:contentDescription="Top Illustration" />
         <ImageView
-            android:id="@+id/teacherLogin"
+            android:id="@+id/teacherlogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
@@ -46,7 +47,7 @@
             android:src="@drawable/student_login"
             android:contentDescription="Top Illustration" />
         <ImageView
-            android:id="@+id/teacherLogin"
+            android:id="@+id/studentparent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"

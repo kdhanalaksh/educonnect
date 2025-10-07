@@ -1,140 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ParentsteachermeetingActivity"
     android:orientation="vertical"
+    android:padding="20dp"
+    android:id="@+id/main"
     android:background="@color/LightBlue">
 
+    <!-- Header -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
 
+        <!-- Back Button -->
         <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/backBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
             android:src="@drawable/backbtn"
-            android:background="@android:color/transparent"
-            android:layout_gravity="center_vertical"
-            android:layout_marginTop="2dp"/>
+            android:contentDescription="@string/back_button"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="PARENTS TEACHER'S MEETING"
+            android:text="JOIN MEETING"
             android:textSize="18sp"
-            android:layout_gravity="center_vertical"
             android:textStyle="bold"
-            android:padding="5dp"
-            android:layout_marginStart="40dp"/>
+            android:layout_marginStart="20dp"/>
 
     </LinearLayout>
 
-    <LinearLayout
+    <!-- Meeting Image -->
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_gravity="center"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/meets"/>
+
+
+    <!-- Meeting ID -->
+    <EditText
+        android:id="@+id/meetingIdEdit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:hint="Enter Meeting ID"
+        android:inputType="number"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:background="@drawable/menuback"/>
 
-        <ImageView
-            android:layout_marginTop="25dp"
-            android:layout_gravity="center"
-            android:layout_width="250dp"
-            android:layout_height="250dp"
-            android:src="@drawable/meets"/>
-
-        <TextView
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="TIME : 2:30-3:00 PM "
-            android:textStyle="bold"
-            android:textSize="18sp"/>
-        
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Join Meeting"
-            android:textColor="@color/white"
-            android:backgroundTint="@color/Blue"
-            android:layout_marginTop="50dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Previous meeting"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:padding="10dp"
-                android:src="@drawable/calen"
-                android:layout_marginStart="20dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="September 2020 to October 2020"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:padding="10dp"
-                android:src="@drawable/contact"
-                android:layout_marginStart="20dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:text="Mrs.Sarah Wilson"/>
-
-        </LinearLayout>
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/Blue"
-            android:text="Reschedule Meeting"
-            />
-
-        <Button
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:backgroundTint="@color/Red"
-            android:text="Cancel Meeting "
-            />
+    <!-- Teacher ID -->
+    <EditText
+        android:id="@+id/teacherIdEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Teacher ID"
+        android:inputType="number"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:background="@drawable/menuback"/>
 
 
 
-
-    </LinearLayout>
+    <!-- Join Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/joinBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Join Meeting"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/Blue"
+        android:layout_marginTop="24dp"/>
 
 </LinearLayout>
