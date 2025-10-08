@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.saveetha.educonnect"
+    namespace = "com.simats.educonnect"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.saveetha.educonnect"
+        applicationId = "com.simats.educonnect"
         minSdk = 24
         targetSdk = 35
         versionCode = 1

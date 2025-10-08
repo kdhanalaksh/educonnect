@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.saveetha.educonnect">
+    package="com.simats.educonnect">
     <!-- Permissions must be before <application> -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
-
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application
         android:allowBackup="true"
@@ -20,120 +19,123 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
-            android:name=".item_meetings"
+            android:name="com.simats.educonnect.SubscriptionActivity"
             android:exported="false" />
         <activity
-            android:name=".activitystudent_meeting"
+            android:name="com.simats.educonnect.item_meetings"
+            android:exported="false" />
+        <activity
+            android:name="com.simats.educonnect.activitystudent_meeting"
             android:exported="false" />
         <activity
             android:name=".student_meeting"
             android:exported="false" />
         <activity
-            android:name=".item_meeting"
+            android:name="com.simats.educonnect.item_meeting"
             android:exported="false" />
-        <activity android:name=".StudentLoginActivity" />
+        <activity android:name="com.simats.educonnect.StudentLoginActivity" />
         <activity
-            android:name=".RescheduleMeeting"
-            android:exported="false" />
-        <activity
-            android:name=".courseacceptancebyteacher"
+            android:name="com.simats.educonnect.RescheduleMeeting"
             android:exported="false" />
         <activity
-            android:name=".postnotification"
+            android:name="com.simats.educonnect.courseacceptancebyteacher"
             android:exported="false" />
         <activity
-            android:name=".createassignment"
+            android:name="com.simats.educonnect.postnotification"
             android:exported="false" />
         <activity
-            android:name=".TeacherProfileEdit"
+            android:name="com.simats.educonnect.createassignment"
             android:exported="false" />
         <activity
-            android:name=".teacherhomeworkpage"
+            android:name="com.simats.educonnect.TeacherProfileEdit"
             android:exported="false" />
         <activity
-            android:name=".SharedUpdates"
+            android:name="com.simats.educonnect.teacherhomeworkpage"
             android:exported="false" />
         <activity
-            android:name=".TeacherAttendanceActivity"
+            android:name="com.simats.educonnect.SharedUpdates"
             android:exported="false" />
         <activity
-            android:name=".TeacherProfileActivity"
+            android:name="com.simats.educonnect.TeacherAttendanceActivity"
             android:exported="false" />
         <activity
-            android:name=".meetingpage"
+            android:name="com.simats.educonnect.TeacherProfileActivity"
             android:exported="false" />
         <activity
-            android:name=".createevent"
+            android:name="com.simats.educonnect.meetingpage"
             android:exported="false" />
         <activity
-            android:name=".meeting"
+            android:name="com.simats.educonnect.createevent"
             android:exported="false" />
         <activity
-            android:name=".notificatoion"
+            android:name="com.simats.educonnect.meeting"
             android:exported="false" />
         <activity
-            android:name=".studentedit"
+            android:name="com.simats.educonnect.notificatoion"
             android:exported="false" />
         <activity
-            android:name=".courserequest"
+            android:name="com.simats.educonnect.studentedit"
             android:exported="false" />
         <activity
-            android:name=".studentlogout"
+            android:name="com.simats.educonnect.courserequest"
             android:exported="false" />
         <activity
-            android:name=".studenthomework"
+            android:name="com.simats.educonnect.studentlogout"
             android:exported="false" />
         <activity
-            android:name=".logout"
+            android:name="com.simats.educonnect.studenthomework"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name="com.simats.educonnect.logout"
             android:exported="false" />
         <activity
-            android:name=".menu"
+            android:name="com.simats.educonnect.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".newpassword"
+            android:name="com.simats.educonnect.menu"
             android:exported="false" />
         <activity
-            android:name=".otpverify"
-            android:exported="false" />
-        <activity android:name=".VerifyEmailActivity" />
-        <activity
-            android:name=".teacherloginerrorpage"
+            android:name="com.simats.educonnect.newpassword"
             android:exported="false" />
         <activity
-            android:name=".studentprofile"
+            android:name="com.simats.educonnect.otpverify"
+            android:exported="false" />
+        <activity android:name="com.simats.educonnect.VerifyEmailActivity" />
+        <activity
+            android:name="com.simats.educonnect.teacherloginerrorpage"
             android:exported="false" />
         <activity
-            android:name=".StudentdashboardActivity"
+            android:name="com.simats.educonnect.studentprofile"
             android:exported="false" />
         <activity
-            android:name=".ParentsteachermeetingActivity"
+            android:name="com.simats.educonnect.StudentdashboardActivity"
             android:exported="false" />
         <activity
-            android:name=".StudentdetailsActivity"
+            android:name="com.simats.educonnect.ParentsteachermeetingActivity"
             android:exported="false" />
         <activity
-            android:name=".StudentregistrationActivity"
+            android:name="com.simats.educonnect.StudentdetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".CalenderActivity"
+            android:name="com.simats.educonnect.StudentregistrationActivity"
             android:exported="false" />
         <activity
-            android:name=".GradeActivity"
+            android:name="com.simats.educonnect.CalenderActivity"
             android:exported="false" />
         <activity
-            android:name=".TeacherdashboardActivity"
+            android:name="com.simats.educonnect.GradeActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.simats.educonnect.TeacherdashboardActivity"
             android:exported="true" />
         <activity
-            android:name=".TeacherloginActivity"
+            android:name="com.simats.educonnect.TeacherloginActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginPageActivity"
+            android:name="com.simats.educonnect.LoginPageActivity"
             android:exported="false" /> <!-- Main launcher activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.simats.educonnect.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
